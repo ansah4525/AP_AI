@@ -6,8 +6,8 @@ import time
 
 app = FastAPI()
 
-MISTRAL_API_KEY = os.environ.get("MISTRAL_API_KEY")
-MISTRAL_MODEL = os.environ.get("MISTRAL_MODEL", "mistral-small")
+MISTRAL_API_KEY = "mstrl_VbuWheZ4A6Mw51t9tv2pMxgSbaizBDrL_1uQQ9D"
+MISTRAL_MODEL = os.environ.get("MISTRAL_MODEL", "ministral-3b-2512")
 
 
 class PromptRequest(BaseModel):
