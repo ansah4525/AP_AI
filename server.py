@@ -27,6 +27,7 @@ def run_llm(req: PromptRequest):
             ]
         }
     )
+    resp=response
 
     data = response.json()
 
