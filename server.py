@@ -29,4 +29,10 @@ def run_llm(req: PromptRequest):
 
     data = response.json()
 
+    if resp.status_code != 200 or "choices" not in data:
+        print("Mistral error:", resp.status_code, data)   # shows in Render logs
+        raise HTTPException(status_code=502, detail=f"Mistral {resp.status_code}: {data}")
+
+   
+
     return {"response": data["choices"][0]["message"]["content"]}
