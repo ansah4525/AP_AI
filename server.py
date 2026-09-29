@@ -5,7 +5,7 @@ import os
 
 app = FastAPI()
 
-MISTRAL_API_KEY = "zH9QWNiWjED1JKEfjivJaVXabcy8a1T1"
+MISTRAL_API_KEY = "mstrl_0tJG66jAs5cNQ8DafMh0HPVgl65LJKUL_3c929L"
 
 class PromptRequest(BaseModel):
     prompt: str
